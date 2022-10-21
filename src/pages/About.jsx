@@ -1,11 +1,11 @@
 import React from 'react';
-import Banner from '../components/Banner';
+import Logo from '../components/Logo';
 import Navigation from '../components/Navigation';
 
 const About = () => {
     return (
-        <div>
-            <Banner />
+        <div className='header'>
+            <Logo />
             <Navigation />
         </div>
     );

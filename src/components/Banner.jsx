@@ -1,26 +1,13 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import banner from '../assets/banner'
 
-function Banner() {
+const Banner = () => {
     return (
-        <div className='logo-banner'>
-            {/*Les images importées depuis la balise IMG sont accessibles dans "publics" */}
-            <img src="{logo}" alt="logo Kasa" className='logo-banner' />
+        <div className='banner'>
+            <img src={banner} alt="background bannière" className='banner__img' />
+            <h1 className='banner__title'>Chez vous, partout et ailleurs</h1>
         </div>
     );
-}
+};
 
 export default Banner;
-
-// import logo from '../assets/LOGO.png';
-// import '../styles/Banner.css'
-
-// function Banner() {
-//     return (
-//         <div className='logo-banner'>
-//             <img src="{logo}" alt="logo Kasa" className='logo-banner' />
-//         </div>
-//     )
-// }
-
-// export default Banner

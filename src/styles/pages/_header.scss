@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: absolute;
+    padding: 5%;
+    // top: 10%;
+
+    &__logo {
+        max-width: 210px;
+    }
+
+    &__navigation {
+
+        ul {
+            display: flex;
+            justify-content: right;
+            width: 300px;
+
+            a {
+                text-decoration: none;
+                padding: 15px;
+
+                li {
+                    list-style: none;
+                    color: $color-1;
+
+                    &:hover {
+                        color: $color-1;
+                    }
+                }
+            }
+
+            .nav-active {
+                position: relative;
+
+                &::after {
+                    content: "";
+                }
+            }
+
+
+        }
+
+    }
+
+}
