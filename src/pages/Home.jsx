@@ -1,14 +1,23 @@
 import React from 'react';
+import Banner from '../components/Banner';
+// import Card from '../components/Card';
 import Logo from '../components/Logo';
 import Navigation from '../components/Navigation';
 
-const Home = () => {
+function Home() {
   return (
-    <header className='header'>
-      <Logo />
-      <Navigation />
-    </header>
+    <div>
+      <header className='header'>
+        <Logo />
+        <Navigation />
+      </header>
+      <div className='body'>
+        <Banner />
+        {/* <Card /> */}
+      </div>
+    </div>
   );
+
 };
 
 export default Home;
