@@ -1,5 +1,8 @@
-@import "./settings";
-@import "./pages/header";
+@import "./base/settings";
+@import "./base/typo";
+@import "./utils/variables";
+@import "./components/header";
+@import "./components/footer";
 @import "./components/logo";
 @import "./components/banner";
 @import "./components/cards";

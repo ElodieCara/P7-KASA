@@ -6,11 +6,12 @@ export default function ErrorPage() {
 
     return (
         <div id="error-page">
-            <h1>Oops!</h1>
-            <p>Sorry, an unexpected error has occurred.</p>
+            <h1>404</h1>
+            <p>Oups! La page que vous avez demandez n'existe pas. </p>
             <p>
                 <i>{error.statusText || error.message}</i>
             </p>
+            {/* <link rel="stylesheet" href="#" />Retourner sur la page d'accueil */}
         </div>
     );
 }

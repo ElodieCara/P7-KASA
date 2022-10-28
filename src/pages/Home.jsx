@@ -1,24 +1,24 @@
-import React from 'react';
 import Banner from '../components/Banner';
-// import Card from '../components/Card';
-import Logo from '../components/Logo';
-import Navigation from '../components/Navigation';
+import Card from '../components/Card';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 function Home() {
+
   return (
     <div>
-      <header className='header'>
-        <Logo />
-        <Navigation />
+      <header>
+        <Header />
       </header>
-      <div className='body'>
+      <main>
         <Banner />
-        {/* <Card /> */}
-      </div>
+        <Card />
+      </main>
+      <Footer />
     </div>
-  );
 
-};
+  )
+}
 
 export default Home;
 
