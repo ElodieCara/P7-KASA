@@ -1,10 +1,10 @@
+// import React from 'react';
+import React from 'react';
 import Banner from '../components/Banner';
-import Card from '../components/Card';
-import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Card from '../components/Card';
 
-function Home() {
-
+const Home = () => {
   return (
     <div>
       <header>
@@ -14,41 +14,44 @@ function Home() {
         <Banner />
         <Card />
       </main>
-      <Footer />
     </div>
-
-  )
-}
+  );
+};
 
 export default Home;
 
-// import React from 'react';
-// import Banner from '../components/Banner';
-// import Card from '../components/Cards';
-// import Navigation from '../components/Navigation';
 
-// const Home = () => {
+
+// function Home() {
+//   const [houses, setHouses] = useState([])
+
+//   useEffect(() => {
+//     console.log(logements)
+//     setHouses(logements)
+//   }, [])
+
 //   return (
 //     <div>
-//       <Banner />
-//       <Navigation />
-//       <Card />
+//       <header>
+//         <Header />
+//       </header>
+//       <main>
+//         <Banner />
+//         <div className='home-all-cards'>
+//           {houses.map((house, id) => (
+//             <div className="card" key={id}>
+//               <Link className="card__link" to={`/logement/${house.id}`}>
+//                 <Card cover={house.cover} title={house.title} />
+//               </Link>
+//             </div >
+//           ))}
+//         </div>
+//       </main>
 //     </div>
 //   );
-// };
+// }
+
+
 
 // export default Home;
 
-// // function Home() {
-// //   return <div style={{
-// //     width: '1440px',
-// //     height: '1024px',
-// //     Top: '-183px',
-// //     left: '-543px',
-// //     background: '#FFFFFF',
-// //   }}>
-
-// //   </div>
-// // }
-
-// // export default Home
