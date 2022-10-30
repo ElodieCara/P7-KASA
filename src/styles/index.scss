@@ -1,9 +1,11 @@
+@import "./utils/variables";
+@import "./base/mixin";
 @import "./base/settings";
 @import "./base/typo";
-@import "./utils/variables";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/logo";
 @import "./components/banner";
 @import "./components/cards";
+@import "./components/collapse";
 @import "./components/navigation";

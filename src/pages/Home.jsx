@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -10,10 +11,11 @@ const Home = () => {
       <header>
         <Header />
       </header>
-      <main>
+      <main className='container__home'>
         <Banner />
         <Card />
       </main>
+      <Footer />
     </div>
   );
 };
