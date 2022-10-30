@@ -5,6 +5,9 @@
         padding: 0.5rem 5rem;
 
         &__toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             @include font;
             text-align: left;
             width: 100%;
@@ -16,16 +19,15 @@
             border-radius: 5px;
             color: white;
 
+            &__icon {
+                text-align: right;
+            }
         }
 
         &__content {
             overflow: hidden;
             height: 0;
             transition: height ease 0.3s;
-
-            // &--show {
-            //     height: auto;
-            // }
 
             &__text {
                 @include font;
@@ -34,7 +36,6 @@
                 border-radius: 5px;
                 background: $secondary-color;
                 color: $primary-color;
-
             }
         }
     }
