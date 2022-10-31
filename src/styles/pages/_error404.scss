@@ -1,0 +1,32 @@
+.error-page {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    align-items: center;
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 288px;
+        margin: 35px;
+    }
+
+    &__content {
+        text-align: start;
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        color: $primary-color;
+        margin: 10rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

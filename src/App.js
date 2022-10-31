@@ -5,7 +5,6 @@ import ErrorPage from './pages/Error404';
 import Home from './pages/Home';
 import ProductSheet from './pages/ProductSheet';
 
-
 const App = () => {
     return (
         <BrowserRouter>
@@ -14,6 +13,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/logement/:id" element={<ProductSheet />} />
                 <Route path="*" element={<ErrorPage />} />
+                <Route path="/logement/*" element={<ErrorPage />} />
             </Routes>
         </BrowserRouter >
     );
