@@ -2,6 +2,8 @@ import React from 'react';
 // import { useParams } from "react-router-dom";
 // import logements from '../ressources/logements.json';
 import { useState, useEffect } from "react";
+import ArrowNext from '../assets/arrow-next.png'
+import ArrowPrev from '../assets/arrow-prev.png'
 
 
 const Slideshow = ({ images }) => {
@@ -20,20 +22,37 @@ const Slideshow = ({ images }) => {
     }, [images])
 
     const prevSlide = () => {
-        if (currentSlide === 0) {
-            setCurrentSlide(images.length)
-        } else {
-            setCurrentSlide(currentSlide - 1)
-        }
+        // if (currentSlide === 0) {
+        //     setCurrentSlide(images.length)
+        // } else {
+        //     setCurrentSlide(currentSlide - 1)
+        // }
         // setCurrentSlide()
+        setCurrentSlide(currentSlide === 0 ? slideArrayLength - 1 : currentSlide - 1);
+    }
+
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide === slideArrayLength - 1 ? 0 : currentSlide + 1);
     }
 
     return (
         <div className='container__slide'>
-            <img src="" alt="" onClick={prevSlide} />
-            <div className="slide">
-                <img src={slides[currentSlide]} alt="" />
+            {slideArrayLength > 1 && (
+                <img className='container__slide__arrow--prev' src={ArrowNext} alt="flèche photos suivante" onClick={nextSlide} />
+            )}
+            {slideArrayLength > 1 && (
+                <img className='container__slide__arrow--next' src={ArrowPrev} alt="flèche photos précédente" onClick={prevSlide} />
+            )}
+            <div className="container__slide__image">
+                <img src={slides[currentSlide]} alt="photos logements" />
+                <span className='container__slide__image-number'>
+                    {currentSlide + 1}/{slideArrayLength}
+                </span>
             </div>
+
+
+
+
             {/* <div>
                 {slides.map((slide, index) => (
                     <div className="container__slide__image" key={index}>

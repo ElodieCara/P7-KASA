@@ -13,7 +13,7 @@ function About() {
             </header>
             <main className='container__about'>
                 <Banner />
-                <div className="home-all-collapse">
+                <div className="home-all-collapse--about">
                     <Collapse label="Fiabilité">
                         <p>Les annonces postées sur Kasa garantissent une fiabilité totale.
                             Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
