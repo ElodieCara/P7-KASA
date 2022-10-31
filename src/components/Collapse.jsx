@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import Icon from "../assets/arrow-top.png"
+import Icon from "../assets/arrow-down.png"
 
 
 function Collapse(props) {
