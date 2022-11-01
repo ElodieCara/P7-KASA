@@ -5,6 +5,11 @@
 }
 
 
+header,
+main {
+  @include container;
+}
+
 // $color-3 
 
 
