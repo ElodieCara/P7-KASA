@@ -5,7 +5,7 @@ import logements from '../ressources/logements.json';
 import { Link } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
-import Card from '../components/Cards';
+import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 
 
@@ -29,7 +29,7 @@ function Home() {
           {houses.map((houses, id) => (
             <div className="card" key={id}>
               <Link className="card__link" to={`/logement/${houses.id}`}>
-                <Card cover={houses.cover} title={houses.title} />
+                <Cards cover={houses.cover} title={houses.title} />
               </Link>
             </div>
           ))}

@@ -1,10 +1,12 @@
 import React from 'react';
+// import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import Collapse from '../components/Collapse';
 import Header from '../components/Header';
 import Slideshow from '../components/Slideshow';
 import logements from '../ressources/logements.json';
 import Rate from '../components/Rate';
+// import Tags from '../components/Tags';
 
 function ProductSheet() {
     const params = useParams();
@@ -16,10 +18,7 @@ function ProductSheet() {
     const equipement = logement.equipments
     let textEquipement = equipement.join('\n')
 
-    const tags = [(logement.tags)]
-    const listTags = tags.map((tag) =>
-        <li>{tag}</li>
-    );
+    const tags = logement.tags
 
     return (
         < div >
@@ -32,8 +31,14 @@ function ProductSheet() {
                     <div className="logement__presentation">
                         <h1>{logement.title}</h1>
                         <h2>{logement.location}</h2>
-                        <div className="tagline">
-                            <ul>{listTags}</ul>
+                        <div className="home-all-taglines">
+                            {tags.map((tag) => {
+                                return (
+                                    <span className='tagline' key={`${tag}`} >
+                                        {tag}
+                                    </span>
+                                )
+                            })}
                         </div>
                     </div>
                     <article className='logement__block'>
