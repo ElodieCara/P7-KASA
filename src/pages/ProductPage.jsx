@@ -5,10 +5,6 @@ import Header from '../components/Header';
 import Slideshow from '../components/Slideshow';
 import logements from '../ressources/logements.json';
 import Rate from '../components/Rate';
-// import Rating from '../components/Rate';
-// import Star from '../assets/star.svg';
-// import Arrow from '../assets/arrow-bottom.png';
-
 
 function ProductSheet() {
     const params = useParams();
@@ -24,10 +20,6 @@ function ProductSheet() {
     const listTags = tags.map((tag) =>
         <li>{tag}</li>
     );
-
-    // const rating = [1, 2, 3, 4, 5];
-
-
 
     return (
         < div >
@@ -50,12 +42,7 @@ function ProductSheet() {
                             <span>{logement.host.name}</span>
                         </div>
                         <div className="logement__block__stars">
-                            {/* <Rate ratings={} /> */}
-                            {/* <Rate score={logement.tag} /> */}
-                            {/* <Rating />*/}
-                            <Rate scaleValue={logement.rating}></Rate>
-                            <Rate />
-
+                            <Rate scoreValue={logement.rating} />
                         </div>
                     </article>
 
