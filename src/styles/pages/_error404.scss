@@ -1,5 +1,5 @@
 .error-page {
-    @include container;
+    @include container-menu;
     display: flex;
     flex-direction: column;
     color: $primary-color;

@@ -1,22 +1,25 @@
 .container__slide {
+    @include container-menu;
     position: relative;
-    margin: auto;
+
 
     &__arrow--prev {
-        position: relative;
-        z-index: 2;
-        top: 17rem;
-        left: 73rem;
+        position: absolute;
+        // z-index: 2;
+        top: 11rem;
+        right: 1rem;
         margin: auto;
+        cursor: pointer;
 
     }
 
     &__arrow--next {
-        position: relative;
-        z-index: 2;
-        top: 17rem;
-        left: -2rem;
+        position: absolute;
+        // z-index: 2;
+        top: 11rem;
+        left: 1rem;
         margin: auto;
+        cursor: pointer;
     }
 
     &__image {
@@ -35,11 +38,18 @@
 
         }
 
-        &-number {
-            position: absolute;
-            top: 29rem;
-            left: 40rem;
-            color: white;
-        }
+    }
+
+    &__number {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 18px;
+
+
     }
 }

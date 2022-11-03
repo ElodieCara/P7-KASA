@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Slideshow from '../components/Slideshow';
 import logements from '../ressources/logements.json';
 import Rate from '../components/Rate';
+import Footer from '../components/Footer';
 // import Tags from '../components/Tags';
 
 function ProductSheet() {
@@ -61,7 +62,7 @@ function ProductSheet() {
                     </Collapse>
                 </section>
             </main >
-
+            <Footer />
         </div >
     );
 };

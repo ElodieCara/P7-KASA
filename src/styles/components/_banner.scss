@@ -1,5 +1,10 @@
 .container__home {
-    @include container;
+    @include container-menu;
+
+    @include mobile {
+        padding: 0 25px 0;
+    }
+
 
     .banner {
         &__home {
@@ -10,6 +15,11 @@
             border-radius: 25px;
             background: $background-card, url(../../assets/banner.png) center/cover;
 
+            @include mobile {
+                justify-content: flex-start;
+                padding: 35px;
+            }
+
             &__title {
                 display: flex;
                 align-items: center;
@@ -17,6 +27,12 @@
                 font-size: 48px;
                 line-height: 142%;
                 color: #FFFFFF;
+
+                @include mobile {
+                    display: flex;
+                    justify-items: flex-start;
+                    width: 435px;
+                }
             }
         }
     }
@@ -26,7 +42,7 @@
 .container__about {
     .banner {
         &__about {
-            @include container;
+            @include container-menu;
             display: flex;
             justify-content: center;
             height: 223px;

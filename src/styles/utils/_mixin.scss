@@ -1,0 +1,26 @@
+/*Breakpoints*/
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+/*Container*/
+
+@mixin container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+@mixin container-menu {
+    max-width: 1240px;
+    margin: 50px auto 50px;
+    width: 100%;
+}

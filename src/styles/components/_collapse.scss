@@ -1,17 +1,15 @@
 .home-all-collapse {
-    @include container;
 
     /* About */
-
     &--about {
         .collapse {
-            padding: 0.5rem 5rem;
+            @include container-menu;
 
             &__toggle {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                @include font;
+
                 text-align: left;
                 width: 100%;
                 background: $primary-color ;
@@ -33,7 +31,7 @@
                 transition: height ease 0.3s;
 
                 &__text {
-                    @include font;
+
                     font-weight: 400;
                     padding: 8px 18px;
                     border-radius: 5px;
@@ -49,7 +47,9 @@
     &--productsheet {
         display: flex;
         gap: 5%;
-        padding-top: 20px;
+        // padding-top: 20px;
+        @include container-menu;
+
 
         .collapse {
 
@@ -59,7 +59,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                @include font;
+
 
                 text-align: left;
                 width: 100%;
@@ -82,7 +82,7 @@
                 transition: height ease 0.3s;
 
                 &__text {
-                    @include font;
+
                     font-weight: 400;
                     padding: 8px 18px;
                     border-radius: 5px;

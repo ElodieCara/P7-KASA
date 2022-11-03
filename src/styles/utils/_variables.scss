@@ -2,6 +2,13 @@ $primary-color: #FF6060;
 $secondary-color: #F7F7F7;
 $tertiary-color: #000000;
 
-$background-card: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+$background-card: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 0%);
 $background-card2: #FFFFFF;
 $background-collapse: #F6F6F6;
+
+/*breakpoints*/
+$breakpoints: (
+    mobile: 768px,
+    tablet: 1440px,
+
+);

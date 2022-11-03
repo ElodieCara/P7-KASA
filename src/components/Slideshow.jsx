@@ -1,6 +1,4 @@
 import React from 'react';
-// import { useParams } from "react-router-dom";
-// import logements from '../ressources/logements.json';
 import { useState, useEffect } from "react";
 import ArrowNext from '../assets/arrow-next.png'
 import ArrowPrev from '../assets/arrow-prev.png'
@@ -45,10 +43,10 @@ const Slideshow = ({ images }) => {
             )}
             <div className="container__slide__image">
                 <img src={slides[currentSlide]} alt="photos logements" />
-                <span className='container__slide__image-number'>
-                    {currentSlide + 1}/{slideArrayLength}
-                </span>
             </div>
+            <span className='container__slide__number'>
+                {currentSlide + 1}/{slideArrayLength}
+            </span>
 
 
 

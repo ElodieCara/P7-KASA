@@ -37,9 +37,7 @@ function About() {
                     {/* <Collapse label="Responsabilité" /> */}
                 </div>
             </main >
-            <footer>
-                <Footer />
-            </footer>
+            <Footer />
         </div >
     );
 };

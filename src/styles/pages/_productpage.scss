@@ -1,6 +1,7 @@
 .logement {
     display: flex;
     justify-content: space-between;
+    @include container-menu;
 
     &__presentation {
         display: flex;
@@ -37,7 +38,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        margin: 20px 0px 24px 0px;
+        margin: 20px 0 0 0;
 
         .tagline {
             display: flex;
@@ -47,9 +48,9 @@
             background-color: $primary-color;
             color: $secondary-color;
             border-radius: 10px;
-            width: 115px;
-            height: 25px;
-            padding: 5px 10px;
+            width: auto;
+            height: auto;
+            padding: 5px 25px;
             font-size: 14px;
             text-align: center;
             font-weight: 500;
@@ -96,15 +97,3 @@
         }
     }
 }
-
-
-
-
-
-
-//        
-
-//     }
-
-//    
-//    
