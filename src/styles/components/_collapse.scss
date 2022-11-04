@@ -2,16 +2,33 @@
 
     /* About */
     &--about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .collapse {
             @include container-menu;
+            max-width: 1023px;
+            margin: 0 0 30px 0;
+
+            @include mobile {
+                max-width: 335px;
+                margin: 10px;
+            }
+
+            @include tablet {
+                max-width: 1024px;
+                padding: 0 45px;
+            }
 
             &__toggle {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
+                height: 47px;
                 text-align: left;
                 width: 100%;
+                font-size: 24px;
                 background: $primary-color ;
                 border: unset;
                 cursor: pointer;
@@ -20,8 +37,19 @@
                 border-radius: 5px;
                 color: white;
 
+                @include mobile {
+                    border-radius: 5px;
+                    height: 30px;
+                    font-size: 13px;
+                }
+
                 &__icon {
                     text-align: right;
+
+                    @include mobile {
+                        width: 20px;
+                        height: 13px;
+                    }
                 }
             }
 
@@ -31,12 +59,16 @@
                 transition: height ease 0.3s;
 
                 &__text {
-
+                    font-size: 24px;
                     font-weight: 400;
                     padding: 8px 18px;
                     border-radius: 5px;
                     background: $secondary-color;
                     color: $primary-color;
+
+                    @include mobile {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -50,17 +82,22 @@
         // padding-top: 20px;
         @include container-menu;
 
+        @include mobile {
+            margin: 15px 0;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
 
         .collapse {
-
             width: 100%;
 
             &__toggle {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
-
+                height: 52px;
+                font-size: 18px;
                 text-align: left;
                 width: 100%;
                 background: $primary-color ;
@@ -71,8 +108,20 @@
                 border-radius: 10px;
                 color: white;
 
+                @include mobile {
+                    height: 30px;
+                    font-size: 13px;
+                    border-radius: 5px;
+                }
+
                 &__icon {
                     text-align: right;
+
+                    @include mobile {
+                        width: 14px;
+                        height: 10px;
+                    }
+
                 }
             }
 
@@ -82,12 +131,16 @@
                 transition: height ease 0.3s;
 
                 &__text {
-
+                    font-size: 18px;
                     font-weight: 400;
                     padding: 8px 18px;
                     border-radius: 5px;
                     background: $secondary-color;
                     color: $primary-color;
+
+                    @include mobile {
+                        font-size: 12px;
+                    }
                 }
             }
         }

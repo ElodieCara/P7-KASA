@@ -1,14 +1,12 @@
 .container__home {
-    @include container-menu;
 
     @include mobile {
-        padding: 0 25px 0;
+        @include container-mobile;
     }
-
 
     .banner {
         &__home {
-            // @include container;
+            @include container-menu;
             display: flex;
             justify-content: center;
             height: 223px;
@@ -16,8 +14,12 @@
             background: $background-card, url(../../assets/banner.png) center/cover;
 
             @include mobile {
+                margin: 0;
                 justify-content: flex-start;
                 padding: 35px;
+                width: 100%;
+                border-radius: 10px;
+                height: 111px;
             }
 
             &__title {
@@ -29,9 +31,8 @@
                 color: #FFFFFF;
 
                 @include mobile {
-                    display: flex;
-                    justify-items: flex-start;
-                    width: 435px;
+                    width: 217px;
+                    font-size: 24px;
                 }
             }
         }
@@ -40,6 +41,10 @@
 }
 
 .container__about {
+    @include mobile {
+        @include container-mobile;
+    }
+
     .banner {
         &__about {
             @include container-menu;
@@ -48,6 +53,13 @@
             height: 223px;
             border-radius: 25px;
             background: $background-card, url(../../assets/banner-about.png) center/cover;
+
+            @include mobile {
+                background-image: $background-card, url(../../assets/banner-mobile.jpg);
+                border-radius: 10px;
+                width: 100%;
+                margin: 20px 0;
+            }
 
             &__title {
                 display: none;

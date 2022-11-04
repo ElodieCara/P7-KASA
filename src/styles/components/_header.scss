@@ -2,44 +2,48 @@
     @include container-menu;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 
-
     @include mobile {
-        margin: 0;
-        padding: 23px;
-        max-width: 335px;
-        width: 100%;
-        height: 315px;
-
+        @include container;
+        margin-top: 25px;
+        align-items: center;
+        height: 100%;
 
     }
 
     &__logo {
-        max-width: 210px;
-        height: 68px;
+        // max-width: 210px;
+        // height: 68px;
 
-        @include mobile {
-            width: 145px;
-            height: 47px;
+        & img {
+            @include mobile {
+                max-width: 145px;
+                height: 47px;
+            }
         }
 
     }
 
     &__navigation {
-
         ul {
             display: flex;
             justify-content: space-between;
-            width: 300px;
+            // width: 300px;
 
             @include mobile {
-                width: 0;
+                justify-content: flex-end;
+                margin: auto;
             }
 
             a {
                 text-decoration: none;
                 padding: 15px;
+
+                @include mobile {
+                    padding: 5px;
+                }
 
                 li {
                     list-style: none;
@@ -52,7 +56,8 @@
 
                     @include mobile {
                         text-transform: uppercase;
-                        padding: 0 5px 0;
+                        font-size: 12px;
+                        // padding: 0 5px 0;
                     }
 
                     &:hover {

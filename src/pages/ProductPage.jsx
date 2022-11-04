@@ -51,7 +51,6 @@ function ProductSheet() {
                             <Rate scoreValue={logement.rating} />
                         </div>
                     </article>
-
                 </section>
                 <section className="home-all-collapse--productsheet">
                     <Collapse label="Description">

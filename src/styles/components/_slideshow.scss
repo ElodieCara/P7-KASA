@@ -1,30 +1,19 @@
 .container__slide {
     @include container-menu;
     position: relative;
-
+    margin-bottom: 0;
 
     &__arrow--prev {
-        position: absolute;
-        // z-index: 2;
-        top: 11rem;
+        @include arrow;
         right: 1rem;
-        margin: auto;
-        cursor: pointer;
-
     }
 
     &__arrow--next {
-        position: absolute;
-        // z-index: 2;
-        top: 11rem;
+        @include arrow;
         left: 1rem;
-        margin: auto;
-        cursor: pointer;
     }
 
     &__image {
-        // position: absolute;
-
         margin: auto;
         border-radius: 25px;
 
@@ -35,6 +24,12 @@
             object-fit: cover;
             margin: auto;
             border-radius: 25px;
+
+            @include mobile {
+                height: auto;
+                border-radius: 10px;
+                height: auto;
+            }
 
         }
 
@@ -49,6 +44,10 @@
         color: $secondary-color;
         font-weight: 500;
         font-size: 18px;
+
+        @include mobile {
+            display: none;
+        }
 
 
     }

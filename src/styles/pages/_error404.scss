@@ -10,12 +10,31 @@
         font-weight: 700;
         font-size: 288px;
         margin: 35px;
+
+        @include mobile {
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 143%;
+            margin: 15px;
+        }
     }
 
     &__content {
         text-align: start;
         font-weight: 500;
         font-size: 36px;
+
+        @include mobile {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            width: 260px;
+            height: 52px;
+
+        }
     }
 
     &__link {
@@ -24,6 +43,12 @@
         font-size: 18px;
         color: $primary-color;
         margin: 10rem;
+
+        @include mobile {
+            font-size: 14px;
+            line-height: 142.6%;
+            margin: 5rem;
+        }
 
         &:hover {
             text-decoration: underline;
