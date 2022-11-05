@@ -34,7 +34,6 @@ function About() {
                             En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés.
                             Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes. </p>
                     </Collapse>
-                    {/* <Collapse label="Responsabilité" /> */}
                 </div>
             </main >
             <Footer />

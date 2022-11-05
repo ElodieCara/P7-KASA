@@ -1,15 +1,13 @@
 .container__home {
 
-    @include mobile {
-        @include container-mobile;
-    }
+    @include mobile {}
 
     .banner {
         &__home {
-            @include container-menu;
             display: flex;
             justify-content: center;
             height: 223px;
+            margin-bottom: 43px;
             border-radius: 25px;
             background: $background-card, url(../../assets/banner.png) center/cover;
 
@@ -41,13 +39,12 @@
 }
 
 .container__about {
-    @include mobile {
-        @include container-mobile;
-    }
+    @include mobile {}
+
 
     .banner {
         &__about {
-            @include container-menu;
+
             display: flex;
             justify-content: center;
             height: 223px;

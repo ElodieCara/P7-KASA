@@ -1,16 +1,14 @@
 .header {
-    @include container-menu;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin: 20px 0 30px 0;
 
     @include mobile {
-        @include container;
-        margin-top: 25px;
+        margin: 5px 0 20px;
         align-items: center;
         height: 100%;
-
     }
 
     &__logo {

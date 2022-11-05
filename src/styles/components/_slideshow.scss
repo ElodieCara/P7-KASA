@@ -1,7 +1,10 @@
 .container__slide {
-    @include container-menu;
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+
+    @include mobile {
+        margin-bottom: 5px
+    }
 
     &__arrow--prev {
         @include arrow;

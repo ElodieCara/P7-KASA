@@ -1,7 +1,7 @@
 .logement {
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin-bottom: 30px;
     max-width: 1240px;
     width: 100%;
 
@@ -58,6 +58,8 @@
         margin: 20px 0 0 0;
 
         @include mobile {
+            flex-wrap: wrap;
+            gap: 0.5rem;
             margin: 10px 0 0 0;
         }
 
@@ -91,7 +93,7 @@
         justify-content: space-between;
 
         @include mobile {
-            @include container-mobile;
+
             flex-direction: row-reverse;
             align-items: center;
             padding-top: 15px;

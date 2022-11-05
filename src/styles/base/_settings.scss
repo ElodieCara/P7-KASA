@@ -4,16 +4,26 @@
   box-sizing: border-box;
 }
 
+
 body {
-  margin: 0;
+  max-width: 1440px;
+  margin: auto;
+  padding: 15px;
   font-family: 'Montserrat', sans-serif;
+
+  @include mobile {
+    // max-width: 375px;
+  }
 }
 
 header,
 main {
-  @include container;
+  max-width: 1240px;
+  margin: auto;
+  width: 100%;
 
-  // @include mobile {
-  //   padding: 5px 15px 0 15px;
-  // }
+  @include mobile {
+    max-width: 335px;
+  }
+
 }

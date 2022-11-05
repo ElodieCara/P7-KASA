@@ -1,9 +1,9 @@
 .home-all-cards {
-    @include container-menu;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 30px;
     padding: 30px;
     border-radius: 25px;
     background-color: $secondary-color;
@@ -25,6 +25,8 @@
 
     @include mobile {
         flex: 100%;
+        width: 335px;
+        height: 255px;
 
     }
 

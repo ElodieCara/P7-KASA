@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import Collapse from '../components/Collapse';
 import Header from '../components/Header';
@@ -7,7 +6,7 @@ import Slideshow from '../components/Slideshow';
 import logements from '../ressources/logements.json';
 import Rate from '../components/Rate';
 import Footer from '../components/Footer';
-// import Tags from '../components/Tags';
+
 
 function ProductSheet() {
     const params = useParams();
