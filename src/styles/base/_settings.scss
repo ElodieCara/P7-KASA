@@ -6,24 +6,24 @@
 
 
 body {
-  max-width: 1440px;
   margin: auto;
-  padding: 15px;
   font-family: 'Montserrat', sans-serif;
 
   @include mobile {
-    // max-width: 375px;
+    min-width: 375px;
   }
 }
 
 header,
 main {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: auto;
+  padding: 0 30px 0 30px;
   width: 100%;
 
   @include mobile {
-    max-width: 335px;
+    min-width: 335px;
+
   }
 
 }

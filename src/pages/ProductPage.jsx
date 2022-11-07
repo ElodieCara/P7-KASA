@@ -15,10 +15,11 @@ function ProductSheet() {
 
     const logement = logements.find(logement => logement.id === params.id)
 
-    const equipement = logement.equipments
-    let textEquipement = equipement.join('\n')
+    // const equipement = logement.equipments
+    // let textEquipement = equipement.join('\n')
+    // console.log(equipement) /* span ul ou map */
 
-    const tags = logement.tags
+    // const tags = logement.tags
 
     return (
         < div >
@@ -32,7 +33,7 @@ function ProductSheet() {
                         <h1>{logement.title}</h1>
                         <h2>{logement.location}</h2>
                         <div className="home-all-taglines">
-                            {tags.map((tag) => {
+                            {logement.tags.map((tag) => {
                                 return (
                                     <span className='tagline' key={`${tag}`} >
                                         {tag}
@@ -56,7 +57,12 @@ function ProductSheet() {
                         <p>{logement.description}</p>
                     </Collapse>
                     <Collapse label="Equipements">
-                        <p style={{ whiteSpace: "pre-wrap" }}>{textEquipement}</p>
+                        {logement.equipments.map((texte, e) => {
+                            return (
+                                // <p style={{ whiteSpace: "pre-wrap" }}>{textEquipement}</p>
+                                <p key={e}>{texte}</p>
+                            )
+                        })}
                     </Collapse>
                 </section>
             </main >

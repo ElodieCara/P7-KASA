@@ -29,9 +29,8 @@
             border-radius: 25px;
 
             @include mobile {
-                height: auto;
+                height: 255px;
                 border-radius: 10px;
-                height: auto;
             }
 
         }
