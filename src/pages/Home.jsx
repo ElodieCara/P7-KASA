@@ -1,4 +1,3 @@
-// import React from 'react';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import logements from '../ressources/logements.json';

@@ -4,7 +4,6 @@ import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-
 function About() {
     return (
         <div>
