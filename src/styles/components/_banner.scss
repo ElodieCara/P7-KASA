@@ -6,7 +6,7 @@
             height: 223px;
             margin-bottom: 43px;
             border-radius: 25px;
-            background: $background-card, url(../../assets/banner.png) center/cover;
+            background: $background-card, url(../../assets/banner.jpg) center/cover;
 
             @include mobile {
                 margin: 0;
@@ -42,7 +42,7 @@
             justify-content: center;
             height: 223px;
             border-radius: 25px;
-            background: $background-card, url(../../assets/banner-about.png) center/cover;
+            background: $background-card, url(../../assets/banner-about.jpg) center/cover;
 
             @include mobile {
                 background-image: $background-card, url(../../assets/banner-mobile.jpg);

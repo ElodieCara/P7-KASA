@@ -4,11 +4,11 @@
     &--about {
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin: 30px 0 50px 0;
         align-items: center;
 
         @include mobile {
-            margin-top: 5px;
+            margin: 5px 0 150px 0;
         }
 
         .collapse {
@@ -73,16 +73,16 @@
         }
     }
 
-    /* ProductSheet */
+    /* ProductPage */
 
-    &--productsheet {
+    &--productpage {
         display: flex;
-        margin-bottom: 30px;
+        margin: 30px 0 150px 0;
         gap: 5%;
 
 
         @include mobile {
-            margin: 15px 0;
+            margin: 15px 0 50px 0;
             flex-direction: column;
             gap: 1.5rem;
         }
@@ -131,7 +131,8 @@
                 &__text {
                     font-size: 18px;
                     font-weight: 400;
-                    padding: 8px 18px;
+                    padding: 18px;
+                    line-height: 25.67px;
                     border-radius: 5px;
                     background: $secondary-color;
                     color: $primary-color;
@@ -144,5 +145,3 @@
         }
     }
 }
-
-/* ProductSheet */

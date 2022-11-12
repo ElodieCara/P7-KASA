@@ -11,5 +11,3 @@ const Cards = ({ cover, title }) => {
 };
 
 export default Cards;
-
-

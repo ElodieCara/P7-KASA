@@ -1,9 +1,12 @@
 .error-page {
-
     display: flex;
     flex-direction: column;
     color: $primary-color;
     align-items: center;
+
+    @include mobile {
+        margin: 150px 0 0;
+    }
 
 
     &__title {
@@ -47,7 +50,7 @@
         @include mobile {
             font-size: 14px;
             line-height: 142.6%;
-            margin: 5rem;
+            margin: 10rem 0;
         }
 
         &:hover {
