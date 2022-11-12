@@ -14,9 +14,7 @@ function ProductSheet() {
     const params = useParams();
     const logement = logements.find(logement => logement.id === params.id)
 
-
     const ratingScore = [1, 2, 3, 4, 5];
-
 
     return (
         <>
@@ -47,13 +45,12 @@ function ProductSheet() {
                                     </div>
                                     <div className="logement__block__stars">
                                         {
-                                            ratingScore.map((ratingElem) =>
-                                                logement.rating >= ratingElem ? (
-                                                    <img src={Star} key={ratingElem.toString()} alt='star full' />
-                                                ) : (
+                                            ratingScore.map((ratingElem) => logement.rating >= ratingElem ? (
+                                                <img src={Star} key={ratingElem.toString()} alt='star full' />
+                                            ) : (
 
-                                                    <img src={StarEmpty} key={ratingElem.toString()} alt='star empty' />
-                                                )
+                                                <img src={StarEmpty} key={ratingElem.toString()} alt='star empty' />
+                                            )
                                             )}
                                     </div>
                                 </article>

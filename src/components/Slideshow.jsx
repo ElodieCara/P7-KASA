@@ -23,6 +23,7 @@ const Slideshow = ({ images }) => {
 
     const nextSlide = () => {
         setCurrentSlide(currentSlide === slideArrayLength - 1 ? 0 : currentSlide + 1);
+
     }
 
     return (
@@ -36,7 +37,8 @@ const Slideshow = ({ images }) => {
             <div className="container__slide__image">
                 <img src={slides[currentSlide]} alt="photos logements" />
             </div>
-            <span className='container__slide__number'>
+            <span style={slideArrayLength > 1 ? { display: "block" } : { display: "none" }}
+                className='container__slide__number'>
                 {currentSlide + 1}/{slideArrayLength}
             </span>
         </div>
