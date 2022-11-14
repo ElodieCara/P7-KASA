@@ -9,69 +9,68 @@ import Star from '../assets/star.svg';
 import StarEmpty from '../assets/star-empty.svg';
 
 
-
 function ProductSheet() {
     const params = useParams();
-    const logement = logements.find(logement => logement.id === params.id)
+    const logement = logements.find(logement => logement.id === params.id);
 
+    // liste du nombre d'étoiles à afficher
     const ratingScore = [1, 2, 3, 4, 5];
+
 
     return (
         <>
-            {
-                logement ? (
-                    < div >
-                        <header>
-                            <Header />
-                            <Slideshow images={logement.pictures} />
-                        </header>
-                        <main className='container--main'>
-                            <section className='logement'>
-                                <div className="logement__presentation">
-                                    <h1>{logement.title}</h1>
-                                    <h2>{logement.location}</h2>
-                                    <div className="home-all-taglines">
-                                        {logement.tags.map((tag, t) => {
-                                            return (
-                                                <span className='tagline' key={t}>{tag}</span>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                                <article className='logement__block'>
-                                    <div className="logement__block__host">
-                                        <img src={logement.host.picture} alt="hôte" height={80} width={80} />
-                                        <span>{logement.host.name}</span>
-                                    </div>
-                                    <div className="logement__block__stars">
-                                        {
-                                            ratingScore.map((ratingElem) => logement.rating >= ratingElem ? (
-                                                <img src={Star} key={ratingElem.toString()} alt='star full' />
-                                            ) : (
-
-                                                <img src={StarEmpty} key={ratingElem.toString()} alt='star empty' />
-                                            )
-                                            )}
-                                    </div>
-                                </article>
-                            </section>
-                            <section className="home-all-collapse--productpage">
-                                <Collapse label="Description">
-                                    <p>{logement.description}</p>
-                                </Collapse>
-                                <Collapse label="Equipements">
-                                    {logement.equipments.map((texte, e) => {
+            {logement ? (
+                < div >
+                    <header>
+                        <Header />
+                        <Slideshow images={logement.pictures} />
+                    </header>
+                    <main className='container--main'>
+                        <section className='logement'>
+                            <div className="logement__presentation">
+                                <h1>{logement.title}</h1>
+                                <h2>{logement.location}</h2>
+                                <div className="home-all-taglines">
+                                    {/* prends la liste de données tags et la renvoie en liste de composants.*/}
+                                    {logement.tags.map((tag, t) => {
                                         return (
-                                            <p key={e}>{texte}</p>
+                                            <span className='tagline' key={t}>{tag}</span>
                                         )
                                     })}
-                                </Collapse>
-                            </section>
-                        </main >
-                        <Footer />
-                    </div >
-
-                ) : <Navigate replace to="/Error404" />
+                                </div>
+                            </div>
+                            <article className='logement__block'>
+                                <div className="logement__block__host">
+                                    <img src={logement.host.picture} alt="hôte" height={80} width={80} />
+                                    <span>{logement.host.name}</span>
+                                </div>
+                                <div className="logement__block__stars">
+                                    {
+                                        ratingScore.map((ratingElem) => logement.rating >= ratingElem ? (
+                                            <img src={Star} key={ratingElem.toString()} alt='star full' />
+                                        ) : (
+                                            <img src={StarEmpty} key={ratingElem.toString()} alt='star empty' />
+                                        )
+                                        )}
+                                </div>
+                            </article>
+                        </section>
+                        <section className="home-all-collapse--productpage">
+                            <Collapse label="Description">
+                                <p>{logement.description}</p>
+                            </Collapse>
+                            <Collapse label="Equipements">
+                                {logement.equipments.map((texte, e) => {
+                                    return (
+                                        <p key={e}>{texte}</p>
+                                    )
+                                })}
+                            </Collapse>
+                        </section>
+                    </main >
+                    <Footer />
+                </div >
+            ) : <Navigate replace to="/Error404/" />
             }
         </>
     )

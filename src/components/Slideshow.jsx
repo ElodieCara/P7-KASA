@@ -14,9 +14,10 @@ const Slideshow = ({ images }) => {
 
     useEffect(() => {
         setSlides(images)
-        console.log(images)
     }, [images])
 
+
+    // paramétre notre composant pour qu'il gère le déroulement des slides 
     const prevSlide = () => {
         setCurrentSlide(currentSlide === 0 ? slideArrayLength - 1 : currentSlide - 1);
     }
