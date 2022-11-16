@@ -3,6 +3,7 @@ import Icon from "../assets/arrow-down.png"
 
 
 function Collapse(props) {
+    
     const [visible, setVisible] = useState(false);
 
     const contentRef = useRef();

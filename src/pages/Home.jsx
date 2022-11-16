@@ -13,7 +13,6 @@ function Home() {
   const [houses, setHouses] = useState([])
 
   useEffect(() => {
-    console.log(logements)
     setHouses(logements)
   }, [])
 
