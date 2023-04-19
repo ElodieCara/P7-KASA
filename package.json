@@ -2,7 +2,7 @@
   "name": "p7-kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://elodiecara.github.io/P7-KASA",
+  "homepage": "https://elodiecara.github.io/P7-KASA/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -21,8 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "postdeploy": "cp public/404.html build/404.html"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
