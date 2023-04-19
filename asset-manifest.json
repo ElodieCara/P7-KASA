@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/P7-KASA/static/css/main.f49c7af8.css",
-    "main.js": "/P7-KASA/static/js/main.15368181.js",
+    "main.js": "/P7-KASA/static/js/main.48d8c4b4.js",
     "static/js/787.93820260.chunk.js": "/P7-KASA/static/js/787.93820260.chunk.js",
     "static/media/banner-about.jpg": "/P7-KASA/static/media/banner-about.3827f97bdcef0854551d.jpg",
     "static/media/banner.jpg": "/P7-KASA/static/media/banner.053687a54587bf187cfc.jpg",
@@ -10,11 +10,11 @@
     "static/media/star-empty.svg": "/P7-KASA/static/media/star-empty.7e4ba6032d7d80ecc30aa389973cef95.svg",
     "static/media/star.svg": "/P7-KASA/static/media/star.6430150c126a3adf92c132c52c9c7428.svg",
     "main.f49c7af8.css.map": "/P7-KASA/static/css/main.f49c7af8.css.map",
-    "main.15368181.js.map": "/P7-KASA/static/js/main.15368181.js.map",
+    "main.48d8c4b4.js.map": "/P7-KASA/static/js/main.48d8c4b4.js.map",
     "787.93820260.chunk.js.map": "/P7-KASA/static/js/787.93820260.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f49c7af8.css",
-    "static/js/main.15368181.js"
+    "static/js/main.48d8c4b4.js"
   ]
 }
