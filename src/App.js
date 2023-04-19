@@ -7,7 +7,7 @@ import ProductPage from "./pages/ProductPage";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/P7-KASA">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
